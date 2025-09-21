@@ -41,6 +41,15 @@ button {
 }
 /* shared-style-shit--start */
 
+main > section {
+    background-image: url("../assets/bg.png");
+    margin-top: 60px;
+    /* z-index: 97; */
+}
+.font-size {
+    font-size: 0.9rem;
+}
+
 .orange {
     color: #fea301;
 }
@@ -79,4 +88,59 @@ button {
     background-color: #111111;
     padding: 10px;
     color: #ffffff;
+}
+/* card-item- style */
+
+h2 {
+    font-size: 2.87rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    justify-content: center;
+}
+
+.card {
+    max-width: 350px;
+    height: 350px;
+    border-radius: 18px;
+    box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    /* z-index: 99; */
+    text-align: center;
+    padding: 50px;
+    background-color: #7c76a72c;
+}
+.card-tital {
+    font-size: 1.53rem;
+    font-weight: 700;
+    color: #202020;
+}
+.card-description {
+    max-width: 280px;
+    font-size: 0.9rem;
+    color: #808080;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    .head-container {
+        text-align: center;
+    }
+    .card-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: 10%;
+    }
+    h2 {
+        text-align: center;
+    }
 }
