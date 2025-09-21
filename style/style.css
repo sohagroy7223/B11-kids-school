@@ -134,10 +134,13 @@ h2 {
     .container {
         flex-direction: column-reverse;
         align-items: baseline;
+        display: flex;
     }
 
     .head-container {
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     .card-container {
         grid-template-columns: 1fr;
