@@ -42,6 +42,10 @@ button {
     border: none;
 }
 /* shared-style-shit--start */
+.About {
+    color: #ffffff;
+    font-size: 1.25rem;
+}
 
 .story-1 {
     background-color: #3cd8e8;
@@ -67,6 +71,7 @@ button {
     justify-content: center;
     margin-top: 80px;
     text-align: center;
+    margin-bottom: 60px;
 }
 
 main > section {
@@ -205,6 +210,43 @@ i {
     font-weight: 600;
     line-height: 28px;
 }
+footer {
+    background-color: #01acfd;
+    max-width: 1440px;
+}
+
+.description {
+    max-width: 400px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.part {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.foot-container {
+    max-width: 1160px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 120px;
+}
+.add {
+    width: 200px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: -80px;
+    color: #ffffff;
+}
+
+.gap {
+    gap: 10px;
+}
 
 @media screen and (max-width: 576px) {
     .container {
@@ -226,6 +268,9 @@ i {
     h2 {
         text-align: center;
     }
+    #icon {
+        display: none;
+    }
     .story-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -241,5 +286,11 @@ i {
     }
     .contant-1 {
         display: none;
+    }
+    .foot-container {
+        /* width: 100%; */
+        padding: 30px;
+        flex-direction: column;
+        justify-content: start;
     }
 }
